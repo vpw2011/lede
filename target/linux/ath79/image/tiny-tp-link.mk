@@ -303,6 +303,16 @@ define Device/tplink_tl-wr743nd-v1
 endef
 TARGET_DEVICES += tplink_tl-wr743nd-v1
 
+define Device/tplink_tl-wr800n-v3
+  $(Device/tplink-16mlzma)
+  SOC := qca9533
+  DEVICE_MODEL := TL-WR800N
+  DEVICE_VARIANT := v3
+  TPLINK_HWID := 0x08410009
+  SUPPORTED_DEVICES += tl-wr841n-v9
+endef
+TARGET_DEVICES += tplink_tl-wr800n-v3
+
 define Device/tplink_tl-wr802n-v1
   $(Device/tplink-4mlzma)
   SOC := qca9533
@@ -358,7 +368,7 @@ endef
 TARGET_DEVICES += tplink_tl-wr841-v8
 
 define Device/tplink_tl-wr841-v9
-  $(Device/tplink-16mlzma)
+  $(Device/tplink-4mlzma)
   SOC := qca9533
   DEVICE_MODEL := TL-WR841N/ND
   DEVICE_VARIANT := v9
