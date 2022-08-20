@@ -309,7 +309,7 @@ define Device/tplink_tl-wr800n-v3
   DEVICE_MODEL := TL-WR800N
   DEVICE_VARIANT := v3
   TPLINK_HWID := 0x08410009
-  SUPPORTED_DEVICES += tl-wr841n-v9
+  SUPPORTED_DEVICES += tl-wr800n-v3
 endef
 TARGET_DEVICES += tplink_tl-wr800n-v3
 
